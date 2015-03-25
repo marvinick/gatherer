@@ -29,3 +29,4 @@ describe "velocity" do
     expect(task.points_toward_velocity).to eq(3)
   end
 end
+

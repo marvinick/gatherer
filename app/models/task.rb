@@ -2,11 +2,11 @@ class Task
   attr_accessor :size, :completed_at
 
   def initialize(options = {} )
-    mark_completed(options[:completed_at]) if options[:completed_at]
+    mark_completed(options[:completed]) if options[:completed_at]
     @size = options[:size]
   end
 
-  def mark_completed(date = nil )
+  def mark_completed(date = nil)
     @completed_at = (date || Time.current)
   end
 
